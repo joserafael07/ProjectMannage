@@ -1,8 +1,8 @@
-package com.projectmanager.ProjectMannage.infrasctructure.dto.controller;
+package com.projectmanager.ProjectMannage.infrasctructure.controller;
 import com.projectmanager.ProjectMannage.applicationservice.ProjectService;
 import com.projectmanager.ProjectMannage.domain.entity.Project;
-import com.projectmanager.ProjectMannage.infrasctructure.dto.dto.ProjectDTO;
-import com.projectmanager.ProjectMannage.infrasctructure.dto.dto.SaveProjectDataDTO;
+import com.projectmanager.ProjectMannage.infrasctructure.dto.ProjectDTO;
+import com.projectmanager.ProjectMannage.infrasctructure.dto.SaveProjectDataDTO;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.net.URI;
 
-import static com.projectmanager.ProjectMannage.infrasctructure.dto.Constant.RestConstants.PATH_PROJECTS;
+import static com.projectmanager.ProjectMannage.infrasctructure.Constant.RestConstants.PATH_PROJECTS;
 
 @RestController
 @RequestMapping(PATH_PROJECTS)

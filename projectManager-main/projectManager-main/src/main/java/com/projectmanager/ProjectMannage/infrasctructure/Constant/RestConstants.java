@@ -1,4 +1,4 @@
-package com.projectmanager.ProjectMannage.infrasctructure.dto.Constant;
+package com.projectmanager.ProjectMannage.infrasctructure.Constant;
 
 public class RestConstants {
     public static final String PATH_PROJECTS = "/projects";

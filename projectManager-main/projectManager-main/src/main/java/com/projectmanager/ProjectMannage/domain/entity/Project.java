@@ -10,10 +10,6 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDate;
 
 @Builder
-/*
-(@Getter / @Setter)
-= @Data funciona igual Getter and Setter
-*/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -41,5 +37,6 @@ public class Project {
     @Column(name = "status", nullable = false)
     @Enumerated(EnumType.STRING)
     private ProjectStatus status;
+
 
 }

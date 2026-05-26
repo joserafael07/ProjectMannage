@@ -1,4 +1,4 @@
-package com.projectmanager.ProjectMannage.infrasctructure.dto.dto;
+package com.projectmanager.ProjectMannage.infrasctructure.dto;
 
 import com.projectmanager.ProjectMannage.domain.entity.Project;
 import com.projectmanager.ProjectMannage.model.ProjectStatus;
@@ -19,16 +19,13 @@ public class ProjectDTO{
 
         public static ProjectDTO create(Project project){
 
-            return new ProjectDTO(
-                    project.getId(),
+            return new ProjectDTO(project.getId(),
                     project.getName(),
                     project.getDescription(),
                     project.getInitialDate(),
                     project.getFinalDate(),
-                    project.getStatus()
-            );
+                    project.getStatus());
 
     }
-
 
 }
